@@ -63,13 +63,13 @@ public class Calculator {
         double momentOfInertia = (1.0/12) * (width * Math.pow(height, 3));
         System.out.printf("The moment of inertia of your square beam is: %.3f in^4%n", momentOfInertia);
         System.out.printf("The mass of your square beam is: %.3f grams%n", mass);
-        System.out.printf("The strength to weight ratio of your beam is: %.3f%n", momentOfInertia / mass);
+        System.out.printf("The strength to mass ratio of your beam is: %.3f%n", momentOfInertia / mass);
     }
     
     public static void iBeamMOI(double height, double web_x, double web_y, double flange_x, double flange_y, double depth, double density, double mass) { 
         double momentOfInertia = ((flange_x * Math.pow(height, 3))/12) - ((flange_x-web_x)*Math.pow(height-2*flange_y, 3)/12);
         System.out.printf("The moment of inertia of your I beam is: %.3f in^4%n", momentOfInertia);
         System.out.printf("The mass of your I beam is: %.3f grams%n", mass);
-        System.out.printf("The strength to weight ratio of your beam is: %.3f%n", momentOfInertia / mass);
+        System.out.printf("The strength to mass ratio of your beam is: %.3f%n", momentOfInertia / mass);
     }
 }
